@@ -9768,3 +9768,61 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+.image-container {
+  float: right;
+}
+
+/* En tu archivo CSS personalizado */
+.card-img-custom {
+  width: 100%; /* Establece el ancho máximo del 100% */
+  height: 150px; /* Establece la altura deseada (ajusta según tus necesidades) */
+  object-fit: cover; /* Mantiene la relación de aspecto y recorta la imagen */
+}
+
+/* Establece el tamaño deseado para las imágenes */
+.img-custom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s; /* Agrega un efecto de transición de 0.2 segundos */
+}
+
+/* Agrega un efecto al pasar el mouse */
+.img-custom:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la imagen al 5% al pasar el mouse */
+}
+
+.same-size-image {
+  height: 200px; /* Ajusta el valor según el tamaño que desees */
+  width: 100%; /* Esto mantiene el ancho al 100% del contenedor */
+}
+
+.video-container {
+  position: relative;
+  width: 80%; /* Ancho del contenedor de video */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  margin-top: 20px; /* Márgenes superiores */
+  margin-bottom: 20px; /* Márgenes inferiores */
+  padding-bottom: 56.25%; /* Proporción de aspecto para videos 16:9 */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.same-size-image {
+  width: 100%;
+}
+
+.same-height-images img {
+  max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
+  width: 100%;
+  object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+}
+
